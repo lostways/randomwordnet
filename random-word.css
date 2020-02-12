@@ -1,0 +1,84 @@
+/* This is the Style Sheet for randomword.net */
+
+body {
+	
+	text-align: center;
+	background: #000000;
+	color: #FFFFFF;
+	
+}
+
+h1 {
+	
+	text-align: center;
+}
+
+a:link {
+	color: #FFFFFF; 
+}
+
+a:visited {
+	color: #FFFFFF;
+}
+
+#main-content {
+	width: 640;
+	text-align: center;
+	margin: 0 auto 0 auto;
+	margin: auto;
+	vertical-align: top;
+	margin-bottom: 125px;
+}
+
+#left-banner {
+	/*float: left; */
+	width: 120;
+}
+
+#navbar {
+	text-align: center;
+	margin-bottom: 25px;
+	font-family: arial black, sans-serif;
+	font-weight:strong;
+	font-size: 16px;
+	text-decoration: none;
+	color: #666666
+	
+}
+
+#navbar A:link, #navbar A:visited{
+	color: #FFFFFF;
+	text-decoration: none;
+	
+}
+
+#navbar a:hover {
+	/*color: #888888; */
+	text-decoration: underline;
+}
+
+#image {
+	text-align: center;
+}
+
+#word {
+	text-align: center;
+}
+
+#definition {
+	
+	text-align: left;
+}
+
+#description {
+	margin-bottom: 15px;
+}
+
+#footer {
+	text-align: right;
+	margin-top: 10px;
+	width: 640;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: .8em;
+}
