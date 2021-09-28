@@ -35,6 +35,8 @@ if ($cgi->param("word"))
 	open WORDS, $wordlist or die "Cant open word list: $!\n";	
 
 	$param_word = $cgi->param("word");
+	$param_word =~ s/[^A-Za-z0-9 ]*//gi;
+	
 	if (grep{/$param_word/} <WORDS>) {
 		$word = $param_word;
 	} else {
