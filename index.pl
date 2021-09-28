@@ -134,7 +134,7 @@ function openWin(URL) {
 <div id=footer style="vertical-align: bottom;">
 
  <p>
- Created by <a href="https://github.com/lostways/">Andrew Lowe</a> in 2007 with Perl. Modified slightly in 2019.
+ Created by <a href="https://github.com/lostways/">Andrew Lowe</a> in 2007 with Perl.
  </p>
  <p>
  [Credits]
