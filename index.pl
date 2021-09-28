@@ -12,6 +12,7 @@ use CGI;
 
 #CC Catalog API
 $CCApiUrl = $ENV{'HTTP_CC_API_URL'};
+$CCApiToken = $ENV{'HTTP_CC_API_TOKEN'};
 
 #SEO Tools
 $verifyV1 = $ENV{'HTTP_VERIFY_v1'}; 
@@ -22,7 +23,7 @@ $ga = $ENV{'HTTP_GA'};
 $wordlist="dicts/6of12.txt";
 
 $browser = LWP::UserAgent->new;
-$browser->agent("Mozilla/5.001 (windows; U; NT4.0; en-us) Gecko/25250101");
+$browser->agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36");
 
 $cgi = new CGI;
 
@@ -190,8 +191,8 @@ sub GetCCImg {
 
 	$imgSearchURL = $CCApiUrl . '/v1/images?size=small&page_size=1&q=' . $word;
 
-	$resp = $browser->get($imgSearchURL);
-	$imgPage = $resp->as_string;
+	$resp = $browser->get($imgSearchURL, "Authorization" => "Bearer " . $CCApiToken);
+	$imgPage = $resp->decoded_content;
 	#$debug = $imgPage;
 
 	$imgPage =~ /\"url\":\"(.*?)\"/;
