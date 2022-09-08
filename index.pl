@@ -49,6 +49,7 @@ else
 	$word = GetWord();
 }
 
+$time = time;
 
 @imgArray = GetCCImg();
 $displayImg = $imgArray[0];
@@ -108,8 +109,8 @@ function openWin(URL) {
 		If you find an interesting/funny/ridiculous word-image combination, click on "Link to current word" and copy the url to share.
 		</div>
 		<div id=navbar>
-			<a href=\"?\" title="New Word">New Word</a> | 
-			<a href=\"?word=$word\" title="Link To Current Word">Link to current word</a>
+			<a href=\"/?$time\" title="New Word">New Word</a> | 
+			<a href=\"/?word=$word\" title="Link To Current Word">Link to current word</a>
 		</div>
 
 		<div id=word>
