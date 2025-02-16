@@ -143,7 +143,7 @@ function openWin(URL) {
 <p>
 Word List: 6of12.txt from the 12dicts project by Alan Beale<br />
 Definition: https://www.dict.org <br />
-Image: https://search.creativecommons.org <br />
+Image: https://openverse.org/ <br />
 </p>
 
 </div>
