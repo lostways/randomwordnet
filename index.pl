@@ -194,7 +194,7 @@ sub GetCCImg {
 
 	$imgSearchURL = $CCApiUrl . '/v1/images?size=small&page_size=1&q=' . $word;
 
-	$resp = $browser->get($imgSearchURL, "Authorization" => "Bearer " . $CCApiToken);
+	$resp = $browser->get($imgSearchURL);
 	$imgPage = $resp->decoded_content;
 	#$debug = $imgPage;
 
